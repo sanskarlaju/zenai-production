@@ -1,0 +1,190 @@
+# ============================================
+# ZenAI Production - Comprehensive .gitignore
+# ============================================
+
+# Environment Files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+*.pem
+*.key
+*.pub
+
+# Node Modules
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build & Distribution
+build/
+dist/
+out/
+*.tgz
+*.tar.gz
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+*.sublime-project
+*.sublime-workspace
+.vim/
+.netrwhist
+*~
+.tern-port
+
+# Logs & Temp Files
+logs/
+*.log
+tmp/
+temp/
+.cache
+*.cache
+
+# Docker & Container
+.dockerignore
+docker-compose.override.yml
+.docker
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+mongodb-data/
+mongo-init.js
+
+# Backups & Restore
+backups/
+*.backup
+*.bak
+*.restore
+dumps/
+
+# SSL & Certificates
+nginx/ssl/*.pem
+nginx/ssl/*.key
+nginx/ssl/*.crt
+nginx/ssl/*.cer
+letsencrypt/
+
+# Uploads & Media
+uploads/
+public/uploads/
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.webm
+*.ogg
+
+# OS Files
+.gitkeep
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Process & Runtime
+.pid
+*.pid
+.lock
+*.lock
+
+# Testing
+.nyc_output/
+coverage/
+.coverage
+*.coverage
+test-results/
+jest-coverage/
+
+# IDEs
+.vscode/settings.json
+.vscode/launch.json
+*.iml
+.classpath
+.project
+.pydevproject
+.settings/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Misc
+*.orig
+*.rej
+*.patch
+.turbo
+dist/
+
+# Production builds
+zenai-frontend/build/
+zenai-frontend/dist/
+
+# AI Engine specific
+zenai-ai-engine/models/
+zenai-ai-engine/embeddings/
+zenai-ai-engine/cache/
+
+# Backend specific
+zenai-backend/logs/
+zenai-backend/uploads/
+
+# Frontend specific
+zenai-frontend/node_modules/
+zenai-frontend/.next/
+zenai-frontend/out/
+
+# Keep git repo root
+!.gitkeep
+
+# Documentation files to keep
+!docs/
+!README.md
+!.env.example
+!.env.production.example
+!.gitignore
+
+# Keep essential configs
+!docker-compose.yml
+!docker-compose.prod.yml
+!Dockerfile
+!nginx/nginx.conf
+!scripts/
+!monitoring/
